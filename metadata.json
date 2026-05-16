@@ -1,0 +1,8 @@
+{
+  "name": "Diamond Roleplay APV",
+  "description": "De officiële Algemene Plaatselijke Verordening (APV) en regelgeving voor Diamond Roleplay FiveM server.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

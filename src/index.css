@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-diamond: #00e5ff;
+  --color-diamond-dark: #00b8d4;
+  --color-bg-dark: #05070a;
+  --color-card-bg: #0d1117;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-dark)] text-slate-200 antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-bold tracking-tight text-white;
+  }
+}
+
+.diamond-gradient {
+  background: linear-gradient(135deg, #00e5ff 0%, #00b8d4 100%);
+}
+
+.diamond-glow {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+}
+
+.glass-card {
+  @apply bg-[var(--color-card-bg)] border border-slate-800 backdrop-blur-md rounded-xl p-6 transition-all duration-300;
+}
+
+.glass-card:hover {
+  @apply border-[var(--color-diamond)] shadow-[0_0_15px_rgba(0,229,255,0.1)];
+}
